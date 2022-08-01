@@ -1,7 +1,7 @@
 # Eukarya
-Country : 🇰🇷 Korea
-Major : Mathematics
-Live in Japan <
+Country : 🇰🇷 Korea </br>
+Major : Mathematics </br>
+Live in Japan </br>
 - 🌱 I’m currently learning ML
 
 
