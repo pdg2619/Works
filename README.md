@@ -1,8 +1,7 @@
 # Eukarya
 Country : 🇰🇷 Korea
 Major : Mathematics
-Live in Japan
-
+Live in Japan <
 - 🌱 I’m currently learning ML
 
 
