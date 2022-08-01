@@ -1,0 +1,35 @@
+﻿#include <stdio.h>
+
+#define NUM_ARRAY	5
+
+
+int main(void)
+{
+	int i, max = 0, min = 0;
+	int a[NUM_ARRAY] = {50, 50, 50 ,50, 50};
+	
+	printf("数列の最大値, 最小値を求めます。\n");
+
+	min = max = a[0];
+
+	for ( i = 0; i < NUM_ARRAY; i++ ) {
+		if ( i != ( NUM_ARRAY - 1 ) ) {
+			printf("a[%d] = %d, ", i, a[i]);
+		}
+		else {
+			printf("a[%d] = %d\n", i, a[i]);
+		}
+
+		if ( ( i > 0 ) && ( a[i] > max ) ) {
+			max = a[i];
+		}
+
+		if ( ( i > 0 ) && ( a[i] < min ) ) {
+			min = a[i];
+		}
+	}
+	
+	printf("max = %d, min = %d\n", max, min);
+		
+	return (0);
+}
