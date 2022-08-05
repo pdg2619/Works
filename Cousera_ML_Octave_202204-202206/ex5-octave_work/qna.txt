@@ -1,3 +1,0 @@
-· need more explain
-- 'bsxfun' in featureNormalize.exe
-- the meaning of existence of cross validation set
