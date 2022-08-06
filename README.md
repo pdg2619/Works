@@ -2,4 +2,4 @@
 Country : 🇰🇷 Korea </br>
 Major : Mathematics </br>
 Live in Japan </br>
-- 🌱 I’m currently learning ML
+- 🌱 I’m currently learning ML, DataScience
