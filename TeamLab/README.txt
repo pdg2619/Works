@@ -1,3 +1,3 @@
 
-©teamLab.Programming Challenge.20220826
+©teamLab.Programming Challenge.Japan.20220826
 
