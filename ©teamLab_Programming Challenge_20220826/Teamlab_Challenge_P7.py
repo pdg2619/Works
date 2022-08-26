@@ -38,13 +38,14 @@ Created on Thu Aug 25 18:49:13 2022
 
 """
 
-num = 1;
+num = 0;
 size = 40; 'even number'
 C = 0;
 C = 2 + 4*(int(size*0.5)-1);
-SET1 = [1];
+SET1 = [0];
 SET2 = [];
-ch = [];
+ch = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
+result = [];
 answer = 0;
 
 if size % 2 == 0:
@@ -59,112 +60,9 @@ num = num + 2
 SET2.append(num % 26)
 
 for i in range(0, int(size*0.5)):
-    if SET1[i] == 1:
-        ch.append('A')
-    if SET1[i] == 2:
-        ch.append('B')
-    if SET1[i] == 3:
-        ch.append('C')
-    if SET1[i] == 4:
-        ch.append('D')
-    if SET1[i] == 5:
-        ch.append('E')
-    if SET1[i] == 6:
-        ch.append('F')
-    if SET1[i] == 7:
-        ch.append('G')
-    if SET1[i] == 8:
-        ch.append('H')
-    if SET1[i] == 9:
-        ch.append('I')
-    if SET1[i] == 10:
-        ch.append('J')
-    if SET1[i] == 11:
-        ch.append('K')
-    if SET1[i] == 12:
-        ch.append('L')
-    if SET1[i] == 13:
-        ch.append('M')
-    if SET1[i] == 14:
-        ch.append('N')
-    if SET1[i] == 15:
-        ch.append('O')
-    if SET1[i] == 16:
-        ch.append('P')
-    if SET1[i] == 17:
-        ch.append('Q')
-    if SET1[i] == 18:
-        ch.append('R')
-    if SET1[i] == 19:
-        ch.append('S')
-    if SET1[i] == 20:
-        ch.append('T')
-    if SET1[i] == 21:
-        ch.append('U')
-    if SET1[i] == 22:
-        ch.append('V')
-    if SET1[i] == 23:
-        ch.append('W')
-    if SET1[i] == 24:
-        ch.append('X')
-    if SET1[i] == 25:
-        ch.append('Y')
-    if SET1[i] == 26:
-        ch.append('Z')
-
-for i in range(0, int(size*0.5)):
-    if SET2[19-i] == 1:
-        ch.append('A')
-    if SET2[19-i] == 2:
-        ch.append('B')
-    if SET2[19-i] == 3:
-        ch.append('C')
-    if SET2[19-i] == 4:
-        ch.append('D')
-    if SET2[19-i] == 5:
-        ch.append('E')
-    if SET2[19-i] == 6:
-        ch.append('F')
-    if SET2[19-i] == 7:
-        ch.append('G')
-    if SET2[19-i] == 8:
-        ch.append('H')
-    if SET2[19-i] == 9:
-        ch.append('I')
-    if SET2[19-i] == 10:
-        ch.append('J')
-    if SET2[19-i] == 11:
-        ch.append('K')
-    if SET2[19-i] == 12:
-        ch.append('L')
-    if SET2[19-i] == 13:
-        ch.append('M')
-    if SET2[19-i] == 14:
-        ch.append('N')
-    if SET2[19-i] == 15:
-        ch.append('O')
-    if SET2[19-i] == 16:
-        ch.append('P')
-    if SET2[19-i] == 17:
-        ch.append('Q')
-    if SET2[19-i] == 18:
-        ch.append('R')
-    if SET2[19-i] == 19:
-        ch.append('S')
-    if SET2[19-i] == 20:
-        ch.append('T')
-    if SET2[19-i] == 21:
-        ch.append('U')
-    if SET2[19-i] == 22:
-        ch.append('V')
-    if SET2[19-i] == 23:
-        ch.append('W')
-    if SET2[19-i] == 24:
-        ch.append('X')
-    if SET2[19-i] == 25:
-        ch.append('Y')
-    if SET2[19-i] == 26:
-        ch.append('Z')
-
-answer = "".join(ch)
+    result.insert(-i,ch[SET2[i]])
+    result.insert(i,ch[SET1[i]])
+       
+answer = "".join(result)
 print(answer)
+    
