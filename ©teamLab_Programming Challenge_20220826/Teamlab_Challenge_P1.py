@@ -23,25 +23,26 @@ Created on Wed Aug 24 09:47:09 2022
 
 """
 
-
+obj = 33333;
 counts = 0;
 i = 0;
+digit = 0;
 
-while(counts <= 33333):
-    i += 1
-    if i < 10 :
-        counts = counts + 6
-        print("{}SHEEP".format(i))
-    elif i < 100:
-        counts = counts + 7
-        print("{}SHEEP".format(i))
-    elif i < 1000:
-        counts = counts + 8
-        print("{}SHEEP".format(i))
-    elif i < 10000:
-        counts = counts + 9
-        print("{}SHEEP".format(i))   
-    else:
-        counts = counts + 10
-        print("{}SHEEP".format(i))
+while(counts <= obj):
+    i = i + 1
+    digit = len(str(i))
+    print(digit)
+    print("{}".format(i))
+    counts = counts + digit
+    print("S")
+    counts = counts + 1
+    print("H")
+    counts = counts + 1
+    print("E")
+    counts = counts + 1
+    print("E")
+    counts = counts + 1
+    print("P")
+    counts = counts + 1
+    
 print(counts)
