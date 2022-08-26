@@ -29,13 +29,13 @@ S = 0;
 X = 0;
 
 for i in range(1, 10001):
-    for j in  range(1, 10001):
+    for j in  range(i, 10001):
         S = i*j;
         if S <= 10000:
             X = (i**2+j**2)**(0.5)
             if int(X) == X:
                 gr.append([i,j])
 
-print(len(gr)/2)
+print(len(gr))
             
         
