@@ -31,18 +31,9 @@ digit = 0;
 while(counts <= obj):
     i = i + 1
     digit = len(str(i))
-    print(digit)
     print("{}".format(i))
     counts = counts + digit
-    print("S")
-    counts = counts + 1
-    print("H")
-    counts = counts + 1
-    print("E")
-    counts = counts + 1
-    print("E")
-    counts = counts + 1
-    print("P")
-    counts = counts + 1
+    print("SHEEP")
+    counts = counts + 5
     
 print(counts)
