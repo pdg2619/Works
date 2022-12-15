@@ -33,6 +33,6 @@ def go(string, sum_main):
     #if __name__ == "__main__":
 #my_str = '552 -1 1 14'
 my_str = '552 -1 1 14'
-print(go(my_str,0))
+go(my_str,0)
 
 
